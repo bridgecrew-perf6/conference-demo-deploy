@@ -8,14 +8,6 @@ import javax.sql.DataSource;
 
 @Configuration
 public class PersistenceConfiguration {
-    @Bean
-    public WebMvcConfigurer corsConfigurer() {
-        return new WebMvcConfigurerAdapter() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**");
-            }
-        };
-    }
+
 
 }
